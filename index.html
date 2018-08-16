@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/materialize-v1.0.0-rc.2/materialize/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
     <title>Food Map</title>
 
 </head>
 <body>
+    <main class="container map">
+        <div class="row map">
+            <div class="col s12 map">
+                <div id="map"></div>
+            </div>
+        </div>
+    </main>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH-RwtN1J9-9j1_5iovzKBWdhQCqGiQrM&libraries=places" async defer></script>
     <script src="assets/materialize-v1.0.0-rc.2/materialize/js/materialize.min.js"></script>
     <script src="src/js/controller/controller.js"></script>
     <script src="src/js/model/model.js"></script>
