@@ -1,0 +1,30 @@
+{
+  "name": "foodmap",
+  "version": "0.0.2",
+  "description": "aplicación web para ver los restaurants cercanos",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natichan/Food-map.git"
+  },
+  "keywords": [
+    "test",
+    "development"
+  ],
+  "author": "Natalia MH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natichan/Food-map/issues"
+  },
+  "homepage": "https://github.com/natichan/Food-map#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
