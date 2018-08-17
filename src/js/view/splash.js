@@ -4,7 +4,7 @@ function timeout() {
 }
 
 function redirect() {
-    window.location="main.html"
+    window.location="../index.html"
         return
 }
 
