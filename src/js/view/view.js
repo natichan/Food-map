@@ -1,10 +1,8 @@
-
 function createMarker(place) {
     let marker = new google.maps.Marker({
       map: map,
       position: place.geometry.location
     });
-
     google.maps.event.addListener(marker, 'click', function() {
       infowindow.setContent(place.name)
       infowindow.open(map, this);
@@ -17,7 +15,7 @@ function showInformationPhoto(place){
     containerInfo.innerHTML += 
     `<img class='col s6 center' src='${photo}'></img>`
     // console.log(photo);
-    showModal(place)
+    showModal(place);
 }
 
 function showModal(mod){
@@ -30,16 +28,14 @@ function showModal(mod){
     `<h2>${name}</h2>
     <p>Dirección ${address}</p>
     <p>Rating ${rating}</p>` 
-    //console.log(name);
-    //console.log(address);
   }
+
   let autocomplete;
   let input = document.getElementById('searchInput');
   function initialize() {
 
     let options = {
     types: ['(restaurant)'],
-    componentRestrictions: {country: "chile"}
     };
     
     autocomplete = new google.maps.places.Autocomplete(input, options);
