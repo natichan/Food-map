@@ -1,7 +1,13 @@
 #map {
     height: 100%;
 }
-html, body, .map{
+html, body, .map {
     height: 100%; 
     padding: 0;
+}
+#showPhoto img{
+    width: 20em;
+    height: 20em;
+    padding: 2em;
+    float: left;
 }

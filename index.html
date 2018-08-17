@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <header class="container">
+    <header class="container center">
         <div class="row">
             <div class="col s12">
                 <h1>F O O D  M A P</h1>
@@ -18,18 +18,39 @@
         </div>
     </header>
     <main class="container map">
-        <div class="row map">
-            <div class="col s12 map">
-                <div id="map"></div>
+            <div class="row map">
+                <div class="col s12 map">
+                    <div id="map"></div>
+                </div>
             </div>
-        </div>
     </main>
+    <section class="container places">
+        <div class="row">
+            <div class="col s12 center">
+                <h4>Comida cerca de ti</h4>
+            <div class="row"> 
+                <input id="searchInput" class="controls" type="text" placeholder="Buscador">
+            </div>     
+            <div class="row center">        
+                    <div id="showPhoto" class="modal-trigger responsive-img estilo" href="#modal1"></div>
+                    </div>
+                    <div id="modal1" class="modal">
+                        <div id="modalInfo" class="modal-content"></div>
+                            <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo</a>
+                        </div>
+                    </div>
+                </div>                     
+            </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH-RwtN1J9-9j1_5iovzKBWdhQCqGiQrM&libraries=places" async defer></script>
     <script src="assets/materialize-v1.0.0-rc.2/materialize/js/materialize.min.js"></script>
     <script src="src/js/controller/controller.js"></script>
     <script src="src/js/model/model.js"></script>
     <script src="src/js/view/view.js"></script>
+    <script src="src/js/view/initMtrlze.js"></script>
+
 
 </body>
 </html>

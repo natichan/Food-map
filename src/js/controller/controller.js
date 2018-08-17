@@ -1,13 +1,12 @@
-navigator.geolocation.getCurrentPosition(initMap);
+function callback(results, status) {
+  if (status === google.maps.places.PlacesServiceStatus.OK) {
+    for (let i = 0; i < results.length; i++) {
+      createMarker(results[i]);
+      // console.log(results[i]);
+      showInformationPhoto(results[i]);
+    }
+  }
+}  
 
-function initMap(position) {
-    
-    const lat = position.coords.latitude;
-    const lng = position.coords.longitude
-    const pos = {lat, lng};
-    map = new google.maps.Map(document.getElementById('map'), {
-    center: pos,
-    zoom: 16
-  });
-};
+
        
