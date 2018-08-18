@@ -5,6 +5,7 @@ function callback(results, status) {
       createMarker(resultFor);
       // console.log(results[i]);
       showInformationPhoto(resultFor);
+      showModal(resultFor);
     }
   }
 }  

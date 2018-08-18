@@ -15,20 +15,14 @@ window.showInformationPhoto = (place) => {
     containerInfo.innerHTML += 
     `<img class='col s8 center' src='${photo}'></img>`
     // console.log(photo);
-    showModal(place);
 }
 
 window.showModal = (mod) => {
-
-    const name = mod.name;
-    const address = mod.vicinity;
-    const rating = mod.rating;
-
     const containerModal = document.getElementById('modalInfo');
     containerModal.innerHTML = 
-    `<h2>${name}</h2>
-    <p>Dirección ${address}</p>
-    <p>Rating ${rating}</p>` 
+    `<h2>${mod.name}</h2>
+    <p>Dirección ${mod.vicinity}</p>
+    <p>Rating ${mod.rating}</p>` 
   }
 
 /*   let autocomplete;
