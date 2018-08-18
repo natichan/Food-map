@@ -1,4 +1,4 @@
-function createMarker(place) {
+window.createMarker = (place) => {
     let marker = new google.maps.Marker({
       map: map,
       position: place.geometry.location
@@ -9,7 +9,7 @@ function createMarker(place) {
     });
   }
 
-function showInformationPhoto(place){
+window.showInformationPhoto = (place) => {
     const photo = place.photos[0].getUrl({'maxHeight': 200});
     const containerInfo = document.getElementById('showPhoto');
     containerInfo.innerHTML += 
@@ -18,7 +18,7 @@ function showInformationPhoto(place){
     showModal(place);
 }
 
-function showModal(mod){
+window.showModal = (mod) => {
 
     const name = mod.name;
     const address = mod.vicinity;
@@ -31,7 +31,7 @@ function showModal(mod){
     <p>Rating ${rating}</p>` 
   }
 
-  let autocomplete;
+/*   let autocomplete;
   let input = document.getElementById('searchInput');
   function initialize() {
 
@@ -41,4 +41,4 @@ function showModal(mod){
     };
     
     autocomplete = new google.maps.places.Autocomplete(input, options);
-    }
+    } */
