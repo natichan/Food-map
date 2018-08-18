@@ -25,7 +25,7 @@ window.showModal = (mod) => {
     <p>Rating ${mod.rating}</p>` 
   }
 
-/*   let autocomplete;
+/*    let autocomplete;
   let input = document.getElementById('searchInput');
   function initialize() {
 
@@ -35,4 +35,4 @@ window.showModal = (mod) => {
     };
     
     autocomplete = new google.maps.places.Autocomplete(input, options);
-    } */
+    }  */
