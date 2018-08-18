@@ -13,7 +13,7 @@ function showInformationPhoto(place){
     const photo = place.photos[0].getUrl({'maxHeight': 200});
     const containerInfo = document.getElementById('showPhoto');
     containerInfo.innerHTML += 
-    `<img class='col s6 center' src='${photo}'></img>`
+    `<img class='col s8 center' src='${photo}'></img>`
     // console.log(photo);
     showModal(place);
 }
