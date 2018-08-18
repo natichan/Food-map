@@ -11,3 +11,21 @@ html, body, .map {
     padding: 2em;
     float: left;
 }
+@media (max-width: 640px) {
+    #showPhoto img{
+        width: 10em;
+        height: 10em;
+        padding: 2em;
+        float: center;
+    }
+    h1{
+        font-size: 3em;
+    }
+    #map {
+        height: 100%;
+    }
+    html, body, .map {
+        height: 90%; 
+        padding: 0;
+    }
+}
