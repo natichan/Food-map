@@ -19,6 +19,7 @@ function showInformationPhoto(place){
 }
 
 function showModal(mod){
+
     const name = mod.name;
     const address = mod.vicinity;
     const rating = mod.rating;
@@ -36,6 +37,7 @@ function showModal(mod){
 
     let options = {
     types: ['(restaurant)'],
+    componentRestrictions: {country: "chile"}
     };
     
     autocomplete = new google.maps.places.Autocomplete(input, options);
